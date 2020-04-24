@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  background-color: white;
+  background-color: whitesmoke;
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -137,4 +137,62 @@ h2::after {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   margin-bottom: 50px;
+  margin-left: 15px;
 }
+
+.icon-big {
+  margin-bottom: 10px;
+  color: #e67d22;
+  border-radius: 40%;
+  font-size: 300%;
+  background-color: white;
+  cursor: pointer;
+}
+.icon-big:hover {
+  color: #e67d22;
+  background-color: #552d0a;
+  transition: color 0.2s, background-color:0.2s;
+  -webkit-animation: icons 1s infinite;
+}
+@keyframes icons{
+  0%{
+    transform: rotate(90deg);
+  }
+  33%{
+    transform: rotate(180deg);
+  }
+  66%{
+    transform: rotate(270deg);
+  }
+
+ 100%{
+    transform: rotate(360deg);
+  }
+}
+
+.service-text{
+  margin-top: 10px;
+  line-height: 145%;
+  width: 70%;
+}
+
+.grid-deserve {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  color: white;
+}
+.deserve-text{
+  margin-top: 50px;
+  margin-left: 30px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+h4{
+  font-size: 90%;
+  font-weight: 300;
+}
+
