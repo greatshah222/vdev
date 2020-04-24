@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: white;
+  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: black;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.row-container {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000ff;
+
+  align-self: flex-start;
+}
+.logo {
+  height: auto;
+  width: 45px;
+  padding-bottom: 5px;
+}
+.main-nav {
+  list-style: none;
+  display: flex;
+  padding-bottom: 4px;
+}
+.main-nav li {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 90%;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #f2aa4cff;
+}
+.image-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.12)),
+    url(image/1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.hero-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 90%;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 15px;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 20%;
+}
+.btn-full:link,
+.btn-full:visited {
+  border: 1px solid #552d0a;
+  background-color: #e67d22;
+  color: wheat;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full:hover,
+.btn-full:active {
+  background-color: #2f8eff;
+  color: white;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #100c36;
+  background-color: #2f8eff;
+  color: white;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #e67d22;
+  background-color: #552d0a;
+  color: wheat;
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+h1 {
+  font-size: 200%;
+  word-spacing: 3px;
+  letter-spacing: 0.5px;
+}
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+h2::after {
+  height: 3px;
+  display: block;
+  content: "";
+  width: 100px;
+  background-color: #e67d22;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin-bottom: 50px;
+}
