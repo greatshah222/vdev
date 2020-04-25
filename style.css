@@ -14,6 +14,7 @@ html {
 header {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 .row{
 width:100%
@@ -290,6 +291,7 @@ margin-top: 30px;
   margin-top: 30px;
   font-weight: 400;
   padding: 10px 30px;
+  cursor: pointer;
 
 
   
@@ -301,6 +303,65 @@ margin-top: 30px;
   color:black;
   transition: all 0.5s ;
 
+}
+
+ .event-popupContainer{
+  position:fixed;
+  top: 20%;
+  left: 30%;
+  width: 600px;
+  height: 500px;
+  opacity:0;
+  background: rgb(245, 245, 245);
+  pointer-events: none;
+
+}
+.event-popupContainer.active{
+  opacity: 1;
+  pointer-events: all;
+  z-index: 1;
+}
+.event-popup h2{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: -20px;
+
+  font-size: 120%;
+  color: #d85f57;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+}
+.event-popup p{
+  margin-left: 10px;
+  margin-right: 10px;
+  word-spacing: 2px;
+  
+}
+
+
+.event-close{
+  display: inline-block;
+  margin-left: 97%;
+  margin-top: 1%;
+  color: white;
+  font-size: 80%;
+  background-color: gray;
+  cursor: pointer;
+}
+.event-close:hover{
+  background-color: red;
+  transition: all 0.2s;
+}
+.popup-img{
+
+display: inline-block;
+
+  height: 270px;
+  width:auto;
+  margin-bottom: 20px;
+padding-left: 90px;
+padding-right: 50px;  
 }
 .footer-container{
   display: grid;
